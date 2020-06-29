@@ -21,7 +21,7 @@ module.exports = function(opt) {
 
         let msg = mapjson[msgid][local];
 
-        if (msg = null) { return "" }
+        if (msg == null) { return "" }
 
         if (argv.length === 0) {
             return msg.replace(/{{\d+}}/g, "");
