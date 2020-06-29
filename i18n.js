@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = function(opt) {
 
     let i18n = {},
-        local = (typeof opt.mappingFilePath === 'string') ? 
+        local = (typeof opt.local === 'string') ? 
             opt.local : "jp",
         mappingFile = (typeof opt.mappingFile === 'string') ?
             opt.mappingFile : path.join(__dirname, 'i18n.json'),
