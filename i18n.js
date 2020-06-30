@@ -30,8 +30,7 @@ module.exports = function(opt) {
                 const r = new RegExp(`{${index}(:\\s*(\\w+))?}`, "g");
                 msg = msg.replace(r, argv[index])
             }
-            msg = msg.replace(regex, "")
-            return msg
+            return msg;
         }
     }
 
